@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/** HEADER */
+/* Style and position left nav bar 
+    + remove bullets
+    + on same line, left to right
+    + font-size
+    + remove underline of the link
+    + add hover effet (underline)
+    + proper distance in between
+    + black color
+*/
+a {
+    text-decoration: none;
+    color: #616161;
+}
+a:hover {
+    text-decoration: underline;
+}
+.top-left-navbar {
+    display: inline-block;
+    list-style-type: none;
+    margin-top: 23px;
+    margin-left: 23px;
+    font-size: 13px;
+    word-spacing: 12px;
+}
+ /* Style and position right nav bar 
+    + remove bullets
+    + on same line, left to right
+    + font-size  
+    + remove underline of the link
+    + proper distance in between
+    + initial font color
+    + make menu icon fit
+    + style "sign in" button
+        - padding
+        - fill the color (blue)
+        - font color (white)
+    + align all elements both hori and verti
+    + add hover effet 
+        for text
+            - underline
+            - more gray 
+        for menu icon
+            - more black
+ */
+.top-right-navbar {
+    list-style-type: none;
+    float: right;
+    margin-top: 15px;
+    margin-right: 20px;
+    font-size: 13px;
+    word-spacing: 12px;
+}
+.top-right-navbar a {
+    color: #212121;
+}
+.top-right-navbar a:hover {
+    color: #616161;
+}
+.top-right-navbar img {
+    width: 25px;
+    vertical-align: middle;
+    opacity: 0.6;
+}
+.top-right-navbar img:hover {
+    opacity: 1;
+}
+.top-right-navbar button {
+    background-color: #4584ef;
+    width: 70px;
+    height: 30px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+}
+
+/** MAIN */
+/* Style and position google logo 
+    + center horizontally
+    + proper height
+    + proper size
+*/
+#google-logo {
+    position: relative;
+    top: 60px;
+    width: 320px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    clear: right;
+}
+/* Style and position search-bar
+    + position below google logo
+    + center horizontally
+    + set width and height
+    - border-radius left and right 
+    + set border
+    + add hover effet
+*/
+#search-bar {
+    position: relative;
+    top: 20px;
+    display: block;
+    margin: 0 auto;
+    width: 480px;
+    height: 40px;
+    border: 1px solid #dfe1e5;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#search-bar:hover {
+    box-shadow: 0 0 3px 1px #dfe1e5;
+}
+
+/* TODO Position search icon properly
+    - proper size
+    - position vertically align with the search
+      bar
+    - position horizontally next to the left of 
+      the search bar
+*/
+#search-icon {
+    position: absolute;
+    top: 288px;
+    left: 420px;
+    width: 18px;
+}
+/* TODO Position microphone properly 
+    - proper size
+    - position vertically align with the search
+      bar
+    - position horizontally next to the left of 
+      the search bar
+*/
+#microphone {
+    position: absolute;
+    top: 288px;
+    right: 420px;
+    width: 18px;
+}
+/* Style and position buttons
+    + position under search bar
+    - center horizontally
+    - set font-family, font-size, color
+    - border(none), border-radius(a little)
+    - fill color (gray)
+    - add hover effet
+        - font color
+        - fill color
+    + set padding
+*/
+.buttons {
+    text-align: center;
+}
+.search-buttons {
+    position: relative;
+    top: 40px;
+    padding: 10px;
+    margin: 5px;
+    display: inline;
+    font-size: 14px;
+    color: #5f6268;
+    border: none;
+    border-radius: 4px;
+}
+.search-buttons:hover {
+    color: black;
+    box-shadow: 0 0 1px 1px #cecdcd;
+    background-color: #f5f3f3;
+}
+/* TODO Style and position texts 
+    - position under buttons
+    - center horizontally
+    - font-family
+*/
+.form-texts {
+    position: relative;
+    top: 60px;
+    /* margin: 0 auto; */
+    font-size: 13px;
+    text-align: center;
+}
+
+/** FOOTER */
+ /* Style and position bottom navbar 
+    + color
+    + height
+    + font-size
+    - word-spacing
+    - remove bullets
+ */
+
+.bottom-navbar {
+    position: absolute;
+    bottom: 0;
+    height: 45px;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    /* display: block; */
+    width: 100%;
+    /* display: inline-block; */
+}
+
+/* Style and position left navbar
+    - margin, padding
+    - proper space in between
+*/
+.bottom-left-navbar {
+    margin-top: 15px;
+    margin-left: 20px;
+    word-spacing: 12px;
+    display: inline-block;
+}
+/* Style and position right navbar
+    + margin, padding
+    + proper space in between
+    + position right
+*/
+.bottom-right-navbar {
+    list-style-type: none;
+    word-spacing: 12px;
+    float: right;
+    margin-top: 15px;
+    margin-right: 20px;
+}
